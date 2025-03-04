@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频导航站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .video-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <h1>小说解说</h1>
+        <small>一个个小故事展示一个个人性的优点或缺点</small>
+    </div>
+    <div class="video-grid">
+        <!-- 视频卡片示例 -->
+        <div class="video-card">
+            <a href="https://www.bilibili.com/video/BV1EZKHeKEZV/?spm_id_from=333.337.search-card.all.click&vd_source=16870bb05a9f58894f8344d93c215b85" target="_blank" rel="noopener noreferrer">
+                <img src="images/大浴女.png" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+                <h3 class="video-title">大浴女</h3>
+                <!-- <p class="video-description">这是一段简短的视频描述，介绍视频的主要内容。</p> -->
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://via.placeholder.com/300x180" alt="视频缩略图" class="video-thumbnail">
+            <div class="video-info">
+                <h3 class="video-title">视频标题2</h3>
+                <p class="video-description">这是另一个视频的简短描述，让用户了解视频内容。</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://via.placeholder.com/300x180" alt="视频缩略图" class="video-thumbnail">
+            <div class="video-info">
+                <h3 class="video-title">视频标题3</h3>
+                <p class="video-description">第三个视频的描述内容，简单介绍视频主题。</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
