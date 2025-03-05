@@ -18,6 +18,23 @@
             padding: 20px;
         }
 
+        .navigation {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .navigation h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .navigation small {
+            font-size: 1.2em;
+            color: #666;
+            display: block;
+        }
+
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -60,6 +77,37 @@
             color: #666;
             line-height: 1.4;
         }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .navigation h1 {
+                font-size: 2em;
+            }
+
+            .navigation small {
+                font-size: 1em;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-card {
+                max-width: 100%;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
     </style>
 </head>
 
@@ -69,9 +117,9 @@
         <small>一个个小故事展示一个个人性的优点或缺点</small>
     </div>
     <div class="video-grid">
-        <!-- 视频卡片示例 -->
         <div class="video-card">
-            <a href="https://www.bilibili.com/video/BV1EZKHeKEZV/?spm_id_from=333.337.search-card.all.click&vd_source=16870bb05a9f58894f8344d93c215b85" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.bilibili.com/video/BV1EZKHeKEZV/?spm_id_from=333.337.search-card.all.click&vd_source=16870bb05a9f58894f8344d93c215b85"
+                target="_blank" rel="noopener noreferrer">
                 <img src="images/大浴女.png" class="video-thumbnail">
             </a>
             <div class="video-info">
@@ -79,23 +127,80 @@
                 <!-- <p class="video-description">这是一段简短的视频描述，介绍视频的主要内容。</p> -->
             </div>
         </div>
-
         <div class="video-card">
-            <img src="https://via.placeholder.com/300x180" alt="视频缩略图" class="video-thumbnail">
+            <a href="https://www.bilibili.com/video/BV1bS421o7De/?spm_id_from=333.337.search-card.all.click&vd_source=16870bb05a9f58894f8344d93c215b85"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/罪与罚.png" class="video-thumbnail">
+            </a>
             <div class="video-info">
-                <h3 class="video-title">视频标题2</h3>
-                <p class="video-description">这是另一个视频的简短描述，让用户了解视频内容。</p>
+                <h3 class="video-title">罪与罚</h3>
+                <p class="video-description">剖析拉斯柯尔尼科夫的道德困境与救赎之路</p>
             </div>
         </div>
-
         <div class="video-card">
-            <img src="https://via.placeholder.com/300x180" alt="视频缩略图" class="video-thumbnail">
+            <a href="https://www.bilibili.com/video/BV11Y411i76T/?spm_id_from=333.337.search-card.all.click"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/1984.png" class="video-thumbnail">
+            </a>
             <div class="video-info">
-                <h3 class="video-title">视频标题3</h3>
-                <p class="video-description">第三个视频的描述内容，简单介绍视频主题。</p>
+                <h3 class="video-title">1984</h3>
+                <p class="video-description">极权社会下的人性异化与自由意志</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="https://www.bilibili.com/video/BV1Yx2rYFETg/?spm_id_from=333.337.search-card.all.click"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/人间失格.png" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+                <h3 class="video-title">人间失格</h3>
+                <p class="video-description">太宰治笔下的边缘人格与社会疏离</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="https://www.bilibili.com/video/BV1EWrxYmEGX/?spm_id_from=333.337.search-card.all.click"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/绝叫.png" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+                <h3 class="video-title">绝叫</h3>
+                <p class="video-description">女性堕落四重奏背后的社会绞杀</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="https://www.bilibili.com/video/BV1x64y1T7b4/?spm_id_from=333.337.search-card.all.click&vd_source=16870bb05a9f58894f8344d93c215b85"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/房思琪的初恋乐园.png" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+                <h3 class="video-title">房思琪的初恋乐园</h3>
+                <p class="video-description">权力暴力下的认知扭曲与沉默博弈</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="https://www.bilibili.com/video/BV1zWfWYDE7P/?spm_id_from=333.337.search-card.all.click"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/三体.png" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+                <h3 class="video-title">三体</h3>
+                <p class="video-description">黑暗森林法则中的道德抉择</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <a href="https://www.bilibili.com/video/BV12J4m177uD/?spm_id_from=333.337.search-card.all.click"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/寄生虫.png" class="video-thumbnail">
+            </a>
+            <div class="video-info">
+                <h3 class="video-title">寄生虫</h3>
+                <p class="video-description">气味隐喻与人性褶皱的视觉化呈现</p>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        一个个小故事展示一个个人性的优点或缺点
+    </footer>
 </body>
 
 </html>
